@@ -12,7 +12,9 @@
 		<audio src="cheese.mp3" id="audio" autoplay loop></audio>
     </div>
     <script>
-		document.addEventListener('mousemove', function() { document.getElementById('audio').play() }, { once: true });
+		document.addEventListener('click', function() {
+			document.getElementById('audio').play();
+		}, { once: true });
 	</script>
 </body>
 </html>
