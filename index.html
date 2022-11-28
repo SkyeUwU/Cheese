@@ -11,8 +11,11 @@
 
 <body>
     <div class="cheese">
-	<iframe src="cheese.mp3" allow="autoplay" id="audio"></iframe>
+		<audio src="cheese.mp3" id="audio" autoplay loop></audio>
     </div>
+    <script>
+		document.addEventListener('click', function() { document.getElementById('audio').play() }, { once: true });
+	</script>
 </body>
 
 </html>
