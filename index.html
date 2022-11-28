@@ -12,11 +12,10 @@
 		<audio src="cheese.mp3" id="audio" autoplay loop></audio>
     </div>
     <script>
-		document.click();
+		document.getElementById('audio').play();
 		document.addEventListener('click', function() {
 			document.getElementById('audio').play();
 		}, { once: true });
-		document.click();
 	</script>
 </body>
 </html>
